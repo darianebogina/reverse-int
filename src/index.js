@@ -1,4 +1,10 @@
 module.exports = function reverse (n) {
-  array = Array.from(String(n));
+  let array = Array.from(String(n));
+  for (let i = (array.length - 1); i > 0; i--) {
+    if (array[i] == '0') {
+        array.pop();
+    }
+    break;
+}
   return array;
 }
